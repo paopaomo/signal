@@ -1,0 +1,22 @@
+{
+  "name": "signal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paopaomo/signal.git"
+  },
+  "author": "Zi Ye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paopaomo/signal/issues"
+  },
+  "homepage": "https://github.com/paopaomo/signal#readme",
+  "dependencies": {
+    "ws": "^7.2.1"
+  }
+}
