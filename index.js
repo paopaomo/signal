@@ -26,7 +26,9 @@ wss.on('connection', (ws, request) => {
             const remote = +data.remote;
             if(code2ws.has(remote)) {
                 ws.sendData('controlled', { remote });
-                ws.sendRemote = code2ws.get(remote).sendData;
+                const remoteWs = code2ws.get(remote);
+                ws.sendRemote = remoteWs.sendData;
+                remoteWs.sendRemote = ws.sendData;
                 ws.sendRemote('be-controlled', { remote: code });
             }
         }
